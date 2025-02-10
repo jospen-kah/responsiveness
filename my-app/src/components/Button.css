@@ -23,6 +23,10 @@
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
 }
+.btn--outline:hover{
+    background-color: #fff;
+    color: #242424;
+}
 
 .btn--meduim{
     padding: 8px 20px;

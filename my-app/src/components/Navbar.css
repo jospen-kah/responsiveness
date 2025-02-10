@@ -63,9 +63,6 @@
     transition: all 0.2s ease-out;
   }
   
-  .fa-bars {
-    color: #fff;
-  }
   
   .nav-links-mobile {
     display: none;
@@ -73,6 +70,7 @@
   
   .menu-icon {
     display: none;
+    color: #fff;
   }
   
   @media screen and (max-width: 960px) {

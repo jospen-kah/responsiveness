@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import { X , Menu} from 'lucide-react';
 import { Button } from './button';
@@ -18,13 +18,17 @@ function Navbar() {
       }
     };
 
+    useEffect(() =>{
+    showButton();
+    },[]);
+
     window.addEventListener('resize', showButton)
   return (
     <>
     <nav className='navbar'>
         <div className='navbar-container'>
-            <Link to="/" className="navbar-logo">
-            <h1>Log</h1>
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            Log
             </Link>
             <div className='menu-icon' onClick={handleClick}>
             {click ? <X /> : <Menu /> }
